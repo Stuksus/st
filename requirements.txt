@@ -1,5 +1,6 @@
 streamlit
 pandas
+setuptools<65
 numpy==1.15.1
 matplotlib
 scikit-learn
