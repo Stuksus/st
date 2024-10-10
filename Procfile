@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run app.py
+web: streamlit run optimized_drpa_code_for_huggingface.txt
