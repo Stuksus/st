@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import lightgbm as lgb
+from lightgbm import LGBMClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, f1_score, recall_score
 from sklearn.decomposition import PCA
@@ -79,8 +79,7 @@ if st.button("Запустить обучение"):
 
         with st.spinner('Обучение модели...'):
             if algorithm_choice == "LightGBM":
-                model = lgb.LGBMClassifier(n_estimators=50,  # Limit estimators for faster training
-                                           max_depth=4)  # Limit depth for faster execution
+                model = LGBMClassifier(n_estimators=50, max_depth=5)  # Limit estimators and depth for fast training
 
                 # Train the model
                 model.fit(X_train, y_train)
