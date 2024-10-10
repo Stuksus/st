@@ -23,11 +23,8 @@ if 'model_parameters' not in st.session_state:
     st.session_state['model_parameters'] = {}
 
 # Add DRPA title separately and make it bigger
-st.markdown("<h1 style='text-align: left; font-size: 4rem;'>DRPA</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: left;'>Попробуйте сейчас</h2>", unsafe_allow_html=True)
+st.sidebar.markdown("<h1 style='text-align: left; font-size: 4rem;'>DRPA</h1>", unsafe_allow_html=True)
 
-# Sidebar for statistics table and feature sample selection
-st.sidebar.title("DRPA")
 
 # Displaying stored model results as a table in the sidebar
 st.sidebar.subheader("Статистика")

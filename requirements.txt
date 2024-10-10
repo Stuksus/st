@@ -1,8 +1,7 @@
-streamlit
-pandas
-setuptools<65
-numpy==1.15.1
-matplotlib
-scikit-learn
-catboost
 
+streamlit==1.21.0
+pandas==1.5.3
+numpy==1.21.0
+matplotlib==3.5.0
+scikit-learn==1.0.2
+catboost==1.0.6
