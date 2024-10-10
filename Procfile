@@ -1,1 +1,1 @@
-web: streamlit run updated_drpa_code_with_lightgbm.txt
+web: sh setup.sh && streamlit run app.py
