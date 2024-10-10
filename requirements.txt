@@ -1,4 +1,4 @@
-setuptools
+python==3.9.20
 streamlit==1.21.0
 pandas==1.5.3
 numpy==1.21.0
